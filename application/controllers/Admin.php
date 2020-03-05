@@ -6,6 +6,7 @@ class Admin extends CI_Controller {
     function __construct()
 	{
 		parent::__construct();
+		$this->load->model('Daerah_model','daerah');
 		if($this->session->userdata('status') != 'admin'){
 			$this->session->set_flashdata('berhasil', '<script>alert("Silahkan login dulu ! ")</script>');
 			redirect('/');
@@ -86,4 +87,8 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/pelapak', $data);
 		$this->load->view('admin/footer');
 	}
+	
+	
+
+	
 }

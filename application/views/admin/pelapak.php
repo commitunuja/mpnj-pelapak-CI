@@ -77,17 +77,12 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for=""><b> Alamat </b></label>
-                                                <textarea name="alamat" id="" cols="30" rows="5" required class="form-control" placeholder="Nama Transportasi"><?=$data['keterangan']?></textarea>
+                                                <textarea name="alamat" id="" cols="30" rows="5" required class="form-control" placeholder="Nama Transportasi"><?=$t->alamat?></textarea>
                                                 <!-- <small id="helpId" class="text-muted">Terdiri dari 3 digit</small> -->
                                             </div>
                                             <div class="form-group">
-                                                <label for="">Status</label>
+                                                <label for="">Daerah</label>
                                                 
-                                                <select name="status" class="form-control" required>
-                                                    <option value="" readonly>-- Pilih Salah Satu --</option>
-                                                    <option value="santri" <?=$t->status_official=='santri' ? 'selected' : ''  ?>>Santri</option>
-                                                    <option value="official" <?=$t->status_official=='official' ? 'selected' : ''  ?>>Official</option>
-                                                </select>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
