@@ -6,7 +6,7 @@ class Admin extends CI_Controller {
     function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Daerah_model','daerah');
+		
 		if($this->session->userdata('status') != 'admin'){
 			$this->session->set_flashdata('berhasil', '<script>alert("Silahkan login dulu ! ")</script>');
 			redirect('/');
@@ -85,6 +85,18 @@ class Admin extends CI_Controller {
 		$data['pelapak'] = $this->db->order_by('id_pelapak', 'DESC')->get('pelapak');
 		$this->load->view('admin/header');
 		$this->load->view('admin/pelapak', $data);
+		$this->load->view('admin/footer');
+	}
+	
+
+
+
+	//produk
+	public function produk()
+	{
+		$data['produk'] = $this->db->order_by('id_produk', 'DESC')->get('produk');
+		$this->load->view('admin/header');
+		$this->load->view('admin/produk', $data);
 		$this->load->view('admin/footer');
 	}
 	

@@ -98,7 +98,7 @@
             <li><a href="<?php echo base_url('admin/users')?>"><i class="fa fa-users"></i> <span>Users</span></a></li>
             <li><a href="<?php echo base_url('admin/pelapak')?>"> <i class="fa fa-home" aria-hidden="true"></i> <span>Pelapak</span></a></li>
 
-            
+            <li><a href="<?php echo base_url('admin/produk')?>"> <i class="fa fa-archive" aria-hidden="true"></i> <span>Produk</span></a></li>
 
             
             
