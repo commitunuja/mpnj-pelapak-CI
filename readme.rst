@@ -2,5 +2,7 @@
 Market Place Nurul Jadid
 ###################
 
-Perjuangan .. 
+
+bagian admin untuk Pelapak 
+di marketPlace Nurul Jadid
 
