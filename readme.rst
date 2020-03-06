@@ -2,7 +2,17 @@
 Market Place Nurul Jadid
 ###################
 
+Pelapak Administrator
+Codeigniter
+MPNJ
 
-bagian admin untuk Pelapak 
-di marketPlace Nurul Jadid
+-----------------
+**Tugas hari ini:**
+
+- [x] Produk
+- [x] Dashboard
+- [x] Transaksi
+- [ ] Rekening
+- [ ] withDraw
+-----------------
 

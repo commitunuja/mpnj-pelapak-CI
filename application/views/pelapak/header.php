@@ -98,7 +98,7 @@
           
             <li><a href="<?php echo base_url('pelapak/produk')?>"> <i class="fa fa-archive" aria-hidden="true"></i> <span>Produk</span></a></li>
 
-            
+            <li><a href="<?php echo base_url('pelapak/transaksi')?>"> <i class="fa fa-cart-plus" aria-hidden="true"></i> <span>Transaksi</span></a></li>
             
             <!-- <li><a href="<?php echo base_url().$this->uri->segment(1); ?>/edit_manajemenuser/<?php echo $this->session->username; ?>"><i class="fa fa-edit"></i> <span>Edit Profile</span></a></li> -->
             <li><a href="<?php echo base_url('login/logout')?>"><i class="fa fa-power-off"></i> <span>Logout</span></a></li>
@@ -113,13 +113,11 @@
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <a href="#" style="margin-right:10px; text-decoration:none;">Haloo Selamat datang di halaman administrator, level anda sebagai Admin</a>
+          <a href="#" style="margin-right:10px; text-decoration:none;">Haloo Selamat datang di halaman Pelapak !
           <a target='_BLANK' class="btn btn-default btn-sm" href="https://github.com/dev-fadil" style="color: #00A65A">Def-Fadil</a>
         </div>
       
 
-        <section class="content-header">
-          <h1> Dashboard <small>Control panel </small> </h1>
-        </section>
+      
 
         <section class="content">
