@@ -118,6 +118,36 @@ class Pelapak extends CI_Controller {
 	}
 
 
+	public function transaksi()
+	{
+		$data['transaksi'] = $this->db->order_by('id_transaksi', 'DESC')->get('transaksi');
+		$this->load->view('pelapak/header');
+		$this->load->view('pelapak/transaksi', $data);
+		$this->load->view('pelapak/footer');
+	}
+	public function detail($id)
+	{
+		$data['transaksi'] = $this->db->where('id_transaksi', $id)->get('transaksi')->row_array();
+		$data['transaksi_detail'] = $this->db->order_by('id_transaksi_detail', 'DESC')->where([
+			'transaksi_id'=> $id,
+			'pelapak_id'=>$this->session->userdata('id_pelapak'),
+			'status_order !='=>'pending'
+		])->get('transaksi_detail');	
+		$this->load->view('pelapak/header');
+		$this->load->view('pelapak/transaksi_detail', $data);
+		$this->load->view('pelapak/footer');
+	}
+	public function status_order($id){
+		$status = $this->input->post('status_order');
+
+		$this->db->where('id_transaksi_detail', $id)->update('transaksi_detail', ['status_order'=>$status]);
+		echo json_encode($status);
+	}
+	public function hapus_transaksi($id){
+		$this->db->where('id_transaksi_detail', $id)->delete('transaksi_detail');
+		$this->session->set_flashdata('berhasil', '<script>alert("Berhasil Dihapus !")</script>');
+		redirect('pelapak/detail/'.$this->input->get('to'));
+	}
 
 	
 }
