@@ -6,13 +6,4 @@ Pelapak Administrator
 Codeigniter
 MPNJ
 
------------------
-**Tugas hari ini:**
-
-- [x] Produk
-- [x] Dashboard
-- [x] Transaksi
-- [ ] Rekening
-- [ ] withDraw
------------------
 
