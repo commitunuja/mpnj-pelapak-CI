@@ -99,7 +99,7 @@
           
             <li><a href="<?php echo base_url('pelapak/produk')?>"> <i class="fa fa-archive" aria-hidden="true"></i> <span>Produk</span></a></li>
 
-            
+            <li><a href="<?php echo base_url('pelapak/transaksi')?>"> <i class="fa fa-cart-plus" aria-hidden="true"></i> <span>Transaksi</span></a></li>
             
             <li><a href="<?php echo base_url('pelapak/rekening')?>"> <i class="fa fa-book" aria-hidden="true"></i> <span>Rekening</span></a></li>
 
@@ -116,18 +116,19 @@
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-<<<<<<< Updated upstream
+
           <a href="#" style="margin-right:10px; text-decoration:none;">Haloo Selamat datang di halaman administrator, level anda sebagai Admin</a>
+
+          <a href="#" style="margin-right:10px; text-decoration:none;">Haloo Selamat datang di halaman Pelapak !
+
           <a target='_BLANK' class="btn btn-default btn-sm" href="https://github.com/dev-fadil" style="color: #00A65A">Def-Fadil</a>
-=======
+
           <a href="#" style="margin-right:10px; text-decoration:none;">Haloo Selamat datang di halaman Pelapak !
           <a target='_BLANK' class="" href="https://github.com/dev-fadil" style="color: #00A65A"></a>
->>>>>>> Stashed changes
+
         </div>
       
 
-        <section class="content-header">
-          <h1> Dashboard <small>Control panel </small> </h1>
-        </section>
+      
 
         <section class="content">
