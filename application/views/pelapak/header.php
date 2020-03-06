@@ -4,17 +4,18 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>WELCOME ADMINISTRATOR</title>
+    <title>Pelapak - Markerplace Nurul Jadid</title>
     <meta name="author" content="nuruljadid.net">
-    <!-- Tell the browser to be responsive to screen width -->
+    <link rel="shortcut icon" href="<?=base_url('asset/images/logo_market_place_3.png')?>">
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- Bootstrap 3.3.5 -->
+  
     <link rel="stylesheet" href="<?php echo base_url(); ?>asset/admin/bootstrap/css/bootstrap.css">
-    <!-- Font Awesome -->
+  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- Ionicons -->
+  
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- DataTables -->
+  
     <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/admin/plugins/datatables/dataTables.bootstrap.css">
     <link href="<?=base_url('asset/sweetalert/sweetalert.css')?>" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url(); ?>asset/admin/dist/css/AdminLTE.min.css">
@@ -81,7 +82,7 @@
             <div class="user-panel">
             <div class="pull-left image">
 
-              <img src="<?=base_url('asset/images/market.png')?>" class="img-responsive">
+              <img src="<?=base_url('asset/images/logo_market_place_3.png')?>" class="img-responsive">
             </div>
             <div class="pull-left info">
                 <p>Muhammad Fadil Hasan</p>
@@ -100,6 +101,8 @@
 
             
             
+            <li><a href="<?php echo base_url('pelapak/rekening')?>"> <i class="fa fa-book" aria-hidden="true"></i> <span>Rekening</span></a></li>
+
             <!-- <li><a href="<?php echo base_url().$this->uri->segment(1); ?>/edit_manajemenuser/<?php echo $this->session->username; ?>"><i class="fa fa-edit"></i> <span>Edit Profile</span></a></li> -->
             <li><a href="<?php echo base_url('login/logout')?>"><i class="fa fa-power-off"></i> <span>Logout</span></a></li>
             </ul>
@@ -113,8 +116,13 @@
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
+<<<<<<< Updated upstream
           <a href="#" style="margin-right:10px; text-decoration:none;">Haloo Selamat datang di halaman administrator, level anda sebagai Admin</a>
           <a target='_BLANK' class="btn btn-default btn-sm" href="https://github.com/dev-fadil" style="color: #00A65A">Def-Fadil</a>
+=======
+          <a href="#" style="margin-right:10px; text-decoration:none;">Haloo Selamat datang di halaman Pelapak !
+          <a target='_BLANK' class="" href="https://github.com/dev-fadil" style="color: #00A65A"></a>
+>>>>>>> Stashed changes
         </div>
       
 
