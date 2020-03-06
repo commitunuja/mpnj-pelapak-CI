@@ -204,5 +204,49 @@ class Pelapak extends CI_Controller {
 			redirect('pelapak/rekening');
 		}
 	}
-	
+
+
+	// withdraw
+	public function withdraw()
+	{
+		$data['pelapak'] = $this->db->where('id_pelapak', $this->session->userdata('id_pelapak'))->get('pelapak')->row_array();
+		$data['withdraw'] = $this->db->where('pelapak_id', $this->session->userdata('id_pelapak'))->get('withdraw');
+		$this->load->view('pelapak/header');
+		$this->load->view('pelapak/withdraw', $data);
+		$this->load->view('pelapak/footer');
+	}
+	public function simpan_withdraw($id)
+	{
+		$data = [
+			'pelapak_id'=>$id,
+			'rekening_pelapak_id'=>$this->input->post('rekening_pelapak_id'),
+			'nominal'=>$this->input->post('nominal'),
+			'status'=>'pending'
+		];
+		$this->db->insert('withdraw', $data);
+		$this->session->set_flashdata('berhasil', '<script>alert("Pengajuan withdraw berhasil !")</script>');
+		redirect('pelapak/withdraw');
+	}
+	public function batal_withdraw($id){
+		
+		$hapus = $this->db->where('id_withdraw', $id)->from('withdraw')->delete();
+		if($hapus){
+			$this->session->set_flashdata('berhasil', '<script>alert("Berhasil Membatalkan Withdraw ! ")</script>');
+			redirect('pelapak/withdraw');
+		}else{
+			$this->session->set_flashdata('berhasil', '<script>alert("Terjadi Error, silahkan coba lagi ! ")</script>');
+			redirect('pelapak/withdraw');
+		}
+	}
+
+
+	public function profile()
+	{
+		$data['pelapak'] = $this->db->where('id_pelapak', $this->session->userdata('id_pelapak'))->get('pelapak')->row_array();
+		
+		$this->load->view('pelapak/header');
+		$this->load->view('pelapak/profile', $data);
+		$this->load->view('pelapak/footer');
+	}
+
 }

@@ -103,6 +103,10 @@
             
             <li><a href="<?php echo base_url('pelapak/rekening')?>"> <i class="fa fa-book" aria-hidden="true"></i> <span>Rekening</span></a></li>
 
+            <li><a href="<?php echo base_url('pelapak/withdraw')?>"> <i class="fa fa-money" aria-hidden="true"></i> <span>Withdraw</span></a></li>
+
+            <li><a href="<?php echo base_url('pelapak/profile')?>"> <i class="fa fa-user" aria-hidden="true"></i> <span>Profile</span></a></li>
+
             <!-- <li><a href="<?php echo base_url().$this->uri->segment(1); ?>/edit_manajemenuser/<?php echo $this->session->username; ?>"><i class="fa fa-edit"></i> <span>Edit Profile</span></a></li> -->
             <li><a href="<?php echo base_url('login/logout')?>"><i class="fa fa-power-off"></i> <span>Logout</span></a></li>
             </ul>
@@ -117,13 +121,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
 
-          <a href="#" style="margin-right:10px; text-decoration:none;">Haloo Selamat datang di halaman administrator, level anda sebagai Admin</a>
-
-          <a href="#" style="margin-right:10px; text-decoration:none;">Haloo Selamat datang di halaman Pelapak !
-
-          <a target='_BLANK' class="btn btn-default btn-sm" href="https://github.com/dev-fadil" style="color: #00A65A">Def-Fadil</a>
-
-          <a href="#" style="margin-right:10px; text-decoration:none;">Haloo Selamat datang di halaman Pelapak !
+           <a href="#" style="margin-right:10px; text-decoration:none;">Haloo Selamat datang di halaman Pelapak !
           <a target='_BLANK' class="" href="https://github.com/dev-fadil" style="color: #00A65A"></a>
 
         </div>
