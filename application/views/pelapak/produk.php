@@ -1,5 +1,8 @@
 
 <div class="col-12">
+<h3>Data Transaksi</h3>
+
+
 <a href="#" data-toggle="modal" data-target="#tambah" class="btn btn-primary btn-sm">Create</a>
 
 <!-- Modal -->

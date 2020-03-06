@@ -149,5 +149,60 @@ class Pelapak extends CI_Controller {
 		redirect('pelapak/detail/'.$this->input->get('to'));
 	}
 
+
+
+	public function rekening()
+	{
+		$data['rekening_pelapak'] = $this->db->order_by('id_rekening', 'DESC')->where('pelapak_id', $this->session->userdata('id_pelapak'))->get('rekening_pelapak');
+		$this->load->view('pelapak/header');
+		$this->load->view('pelapak/rekening', $data);
+		$this->load->view('pelapak/footer');
+	}
+
+	public function tambah_rekening()
+	{
+		$data = [
+			'nama_bank'=>$this->input->post('nama_bank'),
+			'nomor_rekening'=>slug($this->input->post('nomor_rekening')),
+			'atas_nama'=>$this->input->post('atas_nama'),
+			'pelapak_id'=>$this->session->userdata('id_pelapak'),
+		];
+		$tambah = $this->db->insert('rekening_pelapak', $data);
+		if($tambah){
+			$this->session->set_flashdata('berhasil', '<script>alert("Berhasil Membuat Rekening Baru ! ")</script>');
+			redirect('pelapak/rekening');
+		}else{
+			$this->session->set_flashdata('berhasil', '<script>alert("Terjadi error, silahkan coba lagi ! ")</script>');
+			redirect('pelapak/rekening');
+		}
+	}
+	public function hapus_rekening($id){
+		
+		$hapus = $this->db->where('id_rekening', $id)->from('rekening_pelapak')->delete();
+		if($hapus){
+			$this->session->set_flashdata('berhasil', '<script>alert("Berhasil Menghapus Rekening ! ")</script>');
+			redirect('pelapak/rekening');
+		}else{
+			$this->session->set_flashdata('berhasil', '<script>alert("Terjadi Error, silahkan coba lagi ! ")</script>');
+			redirect('pelapak/rekening');
+		}
+	}
+
+	public function update_rekening($id){
+		$data = [
+			'nama_bank'=>$this->input->post('nama_bank'),
+			'nomor_rekening'=>slug($this->input->post('nomor_rekening')),
+			'atas_nama'=>$this->input->post('atas_nama'),
+			'pelapak_id'=>$this->session->userdata('id_pelapak'),
+		];
+		$update = $this->db->where('id_rekening', $id)->update('rekening_pelapak', $data);
+		if($update){
+			$this->session->set_flashdata('berhasil', '<script>alert("Telah diupdate ! ")</script>');
+			redirect('pelapak/rekening');
+		}else{
+			$this->session->set_flashdata('berhasil', '<script>alert("Terjadi error, silahkan coba lagi ! ")</script>');
+			redirect('pelapak/rekening');
+		}
+	}
 	
 }
