@@ -12,7 +12,7 @@ Tugas hari ini :
 - [x] Produk
 - [x] Dashboard
 - [x] Transaksi
-- [ ] Rekening
+- [x] Rekening
 - [ ] withDraw
 
 
