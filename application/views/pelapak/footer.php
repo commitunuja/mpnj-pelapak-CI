@@ -2,7 +2,7 @@
         <div style='clear:both'></div>
       </div><!-- /.content-wrapper -->
       <footer class="main-footer">
-      <strong>Copyright &copy; <?php echo date('Y'); ?>  with <i id="hati" class="fa fa-heart" style="color: red" aria-hidden="true"></i> by <a target='_BLANK' href="https://github.com/dev-fadil"> Fadil Hasan</a>.</strong>
+      <strong>Copyright &copy; <?php echo date('Y'); ?>. Market Place <a target='_BLANK' href="https://nuruljadid.net"> Nurul Jadid</a></strong>
       </footer>
     </div>
 
