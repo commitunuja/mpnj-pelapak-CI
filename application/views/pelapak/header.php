@@ -93,22 +93,22 @@
 
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu">
-            <li class="header" style='text-transform:uppercase;'>MENU </li>
-            <li><a href="<?php echo base_url('pelapak')?>"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
-            
-          
-            <li <?php if ($this->uri->segment(2) == 'produk') { echo "class=active"; } ?>><a href="<?php echo base_url('pelapak/produk')?>"> <i class="fa fa-archive" aria-hidden="true"></i> <span>Produk</span></a></li>
+                <li class="header" style='text-transform:uppercase;'>MENU </li>
+                <li><a href="<?php echo base_url('pelapak')?>"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
 
-            <li <?php if ($this->uri->segment(2) == 'transaksi') { echo "class=active"; } ?>><a href="<?php echo base_url('pelapak/transaksi')?>"> <i class="fa fa-cart-plus" aria-hidden="true"></i> <span>Transaksi</span></a></li>
-            
-            <li <?php if ($this->uri->segment(2) == 'rekening') { echo "class=active"; } ?>><a href="<?php echo base_url('pelapak/rekening')?>"> <i class="fa fa-book" aria-hidden="true"></i> <span>Rekening</span></a></li>
 
-            <li <?php if ($this->uri->segment(2) == 'withdraw') { echo "class=active"; } ?>><a href="<?php echo base_url('pelapak/withdraw')?>"> <i class="fa fa-money" aria-hidden="true"></i> <span>Withdraw</span></a></li>
+                <li <?php if ($this->uri->segment(2) == 'produk') { echo "class=active"; } ?>><a href="<?php echo base_url('pelapak/produk')?>"> <i class="fa fa-archive" aria-hidden="true"></i> <span>Produk</span></a></li>
 
-            <li <?php if ($this->uri->segment(2) == 'profile') { echo "class=active"; } ?>><a href="<?php echo base_url('pelapak/profile')?>"> <i class="fa fa-user" aria-hidden="true"></i> <span>Profile</span></a></li>
+                <li <?php if ($this->uri->segment(2) == 'transaksi') { echo "class=active"; } ?>><a href="<?php echo base_url('pelapak/transaksi')?>"> <i class="fa fa-cart-plus" aria-hidden="true"></i> <span>Transaksi</span></a></li>
 
-            <!-- <li><a href="<?php echo base_url().$this->uri->segment(1); ?>/edit_manajemenuser/<?php echo $this->session->username; ?>"><i class="fa fa-edit"></i> <span>Edit Profile</span></a></li> -->
-            <li><a href="<?php echo base_url('login/logout')?>"><i class="fa fa-power-off"></i> <span>Logout</span></a></li>
+                <li <?php if ($this->uri->segment(2) == 'rekening') { echo "class=active"; } ?>><a href="<?php echo base_url('pelapak/rekening')?>"> <i class="fa fa-book" aria-hidden="true"></i> <span>Rekening</span></a></li>
+
+                <li <?php if ($this->uri->segment(2) == 'withdraw') { echo "class=active"; } ?>><a href="<?php echo base_url('pelapak/withdraw')?>"> <i class="fa fa-money" aria-hidden="true"></i> <span>Withdraw</span></a></li>
+
+                <li <?php if ($this->uri->segment(2) == 'profile') { echo "class=active"; } ?>><a href="<?php echo base_url('pelapak/profile')?>"> <i class="fa fa-user" aria-hidden="true"></i> <span>Profile</span></a></li>
+
+                <!-- <li><a href="<?php echo base_url().$this->uri->segment(1); ?>/edit_manajemenuser/<?php echo $this->session->username; ?>"><i class="fa fa-edit"></i> <span>Edit Profile</span></a></li> -->
+                <li><a href="<?php echo base_url('login/logout')?>"><i class="fa fa-power-off"></i> <span>Logout</span></a></li>
             </ul>
         </section>
       </aside>
