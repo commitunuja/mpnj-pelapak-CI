@@ -35,7 +35,7 @@
     
   </head>
   <?php echo $this->session->flashdata('berhasil') ? $this->session->flashdata('berhasil') : '' ?>
-  <body class="hold-transition skin-red-light sidebar-mini">
+  <body class="sidebar-mini wysihtml5-supported skin-green-light">
     <div class="wrapper">
       <header class="main-header">
         <style type="text/css">
@@ -52,14 +52,14 @@
           }
           </style>
                 <!-- Logo -->
-                <a href="index.php" class="logo" style="background: #333;">
+                <a href="index.php" class="logo">
                   <!-- mini logo for sidebar mini 50x50 pixels -->
                   <span class="logo-mini"></span>
                   <!-- logo for regular state and mobile devices -->
                   <span class="logo-lg"><b>PELAPAK</b> Dash</span>
                 </a>
                 <!-- Header Navbar: style can be found in header.less -->
-                <nav class="navbar navbar-static-top" role="navigation" style="background: #444;">
+                <nav class="navbar navbar-static-top" role="navigation">
                   <!-- Sidebar toggle button -->
                   <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                     <span class="sr-only">Toggle navigation</span>
