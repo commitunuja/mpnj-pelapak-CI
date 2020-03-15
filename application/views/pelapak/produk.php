@@ -4,7 +4,7 @@
             <div class="box-header">
                 <h3 class="box-title">Data Produk Anda</h3>
                 <div class="box-tools">
-                    <a href="#" data-toggle="modal" data-target="#tambah" class="btn btn-primary btn-sm">Tambah</a>
+                    <a href="<?=base_url().'pelapak/produk/tambah'?>" class="btn btn-primary btn-sm">Tambah</a>
                 </div>
             </div>
             <div class="box-body table-responsive">
