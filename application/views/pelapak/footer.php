@@ -34,13 +34,14 @@
     <!-- AdminLTE App -->
     <script src="<?php echo base_url(); ?>asset/admin/dist/js/app.min.js"></script>
     <script src="<?php echo base_url(); ?>asset/admin/dist/js/jquery.nestable.js"></script>
+    <!-- CK Editor -->
+    <script src="<?php echo base_url(); ?>asset/admin/plugins/ckeditor/ckeditor.js"></script>
+<!--    <script src="--><?php //echo base_url(); ?><!--asset/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>-->
     <script>
         $(document).ready(function(){
           $('.table').DataTable();
+          CKEDITOR.replace('keterangan');
         })
-        
-
-        
     </script>
   </body>
 </html>

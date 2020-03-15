@@ -27,10 +27,13 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>asset/admin/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>asset/admin/plugins/datepicker/datepicker3.css">
 
+      <!-- bootstrap wysihtml5 - text editor -->
+<!--      <link rel="stylesheet" href="--><?php //echo base_url(); ?><!--asset/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">-->
+
     <link rel="stylesheet" href="<?php echo base_url(); ?>asset/admin/plugins/daterangepicker/daterangepicker-bs3.css">
     <style type="text/css"> .files{ position:absolute; z-index:2; top:0; left:0; filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; opacity:0; background-color:transparent; color:transparent; } </style>
     <script type="text/javascript" src="<?php echo base_url(); ?>/asset/admin/plugins/jQuery/jquery-1.12.3.min.js"></script>
-    <script src="<?php echo base_url(''); ?>asset/ckeditor/ckeditor.js"></script>
+<!--    <script src="--><?php //echo base_url(); ?><!--asset/ckeditor/ckeditor.js"></script>-->
     <style type="text/css">#example thead tr, #table1 thead tr, #example1 thead tr, #example2 thead tr{ background-color: #e3e3e3; } .checkbox-scroll { border:1px solid #ccc; width:100%; height: 114px; padding-left:8px; overflow-y: scroll; }</style>
     
   </head>
