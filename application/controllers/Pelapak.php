@@ -30,6 +30,14 @@ class Pelapak extends CI_Controller {
 		$this->load->view('pelapak/produk', $data);
 		$this->load->view('pelapak/footer');
 	}
+
+	public function produk_form()
+    {
+        $this->load->view('pelapak/header');
+        $this->load->view('pelapak/produk_form');
+        $this->load->view('pelapak/footer');
+    }
+
 	public function tambah_produk(){
 		$data = [
 			'nama_produk'=>$this->input->post('nama_produk'),
