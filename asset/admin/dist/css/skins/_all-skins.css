@@ -857,8 +857,8 @@
 }
 .skin-green-light .sidebar-menu > li:hover > a,
 .skin-green-light .sidebar-menu > li.active > a {
-  color: #000000;
-  background: #f4f4f5;
+  color: white;
+  background: #00a65a;
 }
 .skin-green-light .sidebar-menu > li.active {
   border-left-color: #00a65a;
