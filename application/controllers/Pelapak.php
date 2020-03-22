@@ -89,7 +89,25 @@ class Pelapak extends CI_Controller {
 	}
 
 	public function update_produk($id){
+        $data = [
+            'nama_produk'=>$this->input->post('nama_produk'),
+            'slug'=>slug($this->input->post('nama_produk')),
+            'satuan'=>$this->input->post('satuan'),
+            'berat'=>$this->input->post('berat'),
+            'harga_modal'=>$this->input->post('harga_modal'),
+            'harga_jual'=>$this->input->post('harga_jual'),
+            'diskon'=>$this->input->post('diskon'),
+            'stok'=>$this->input->post('stok'),
+            'keterangan'=>$this->input->post('keterangan'),
+            'kategori_produk_id'=>$this->input->post('kategori_produk_id'),
+            'pelapak_id'=>$this->session->userdata('id_pelapak')
+//            'tipe_produk'=>$this->input->post('tipe_produk'),
+        ];
 
+        $update = $this->db->where('id_produk', $id)->update('produk',$data);
+        if ($update) {
+            redirect('pelapak/produk');
+        }
 	}
 
 	public function tambah_foto($id){
