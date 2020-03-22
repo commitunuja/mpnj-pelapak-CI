@@ -151,7 +151,14 @@ class Pelapak extends CI_Controller {
 
 	public function transaksi()
 	{
-		$data['transaksi'] = $this->db->order_by('id_transaksi', 'DESC')->get('transaksi');
+//		$data = $this->db->query("SELECT * FROM transaksi JOIN transaksi_detail ON transaksi_detail.transaksi_id = transaksi.id_transaksi WHERE transaksi_detail.status_order = ")->result_array();
+		$data['transaksi'] = $this->db->select("*")
+                     ->from('transaksi')
+                     ->join('transaksi_detail', 'transaksi_detail.transaksi_id = transaksi.id_transaksi')
+                     ->where('transaksi_detail.pelapak_id', 1)
+                     ->where('transaksi_detail.status_order !=', 'pending')
+                     ->get();
+
 		$this->load->view('pelapak/header');
 		$this->load->view('pelapak/transaksi', $data);
 		$this->load->view('pelapak/footer');
