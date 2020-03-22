@@ -47,10 +47,9 @@
                                 <td>
                                     <a href="<?=base_url('pelapak/hapus_produk/'.$t->id_produk)?>" class="text-white btn btn-sm btn-danger"><i class="fa fa-trash" aria-hidden="true"></i> </a>
 
+                                    <a href="<?=base_url('pelapak/produk/edit/'.$t->id_produk)?>" class="text-white btn btn-sm btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
                                     <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#edit<?=$t->id_produk?>">
-                                        <i class="fa fa-pencil" aria-hidden="true"></i>
-                                    </button>
+
 
                                     <!-- Modal -->
                                     <div class="modal fade bd-example-modal-lg" id="edit<?=$t->id_produk?>" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
