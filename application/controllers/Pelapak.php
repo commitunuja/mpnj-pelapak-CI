@@ -18,9 +18,6 @@ class Pelapak extends CI_Controller {
 		$this->load->view('pelapak/home');
 		$this->load->view('pelapak/footer');
 	}
-	
-
-
 
 	//produk
 	public function produk()
@@ -62,7 +59,15 @@ class Pelapak extends CI_Controller {
 			redirect('pelapak/produk');
 		}
 	}
-	
+
+	public function produk_edit()
+    {
+        $id = $this->uri->segment(4);
+        $data['p'] = $this->db->where('id_produk', $id)->from('produk')->get()->row_array();
+        $this->load->view('pelapak/header');
+        $this->load->view('pelapak/produk_edit', $data);
+        $this->load->view('pelapak/footer');
+    }
 
 	public function hapus_produk($id){
 		$hapus = $this->db->where('id_produk', $id)->from('produk')->delete();
