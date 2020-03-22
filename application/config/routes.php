@@ -6,3 +6,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['pelapak/produk/tambah'] = 'Pelapak/produk_form';
+$route['pelapak/produk/edit/(:any)'] = 'Pelapak/produk_edit';
